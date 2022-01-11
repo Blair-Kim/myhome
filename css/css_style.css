@@ -1,0 +1,552 @@
+body{font-family: GowunDodum-Regular; 
+    font-weight: 1.2em;}
+
+    a {text-decoration: none;}
+    a:link, a:visited{color:black;}
+    a:active {color:#FED057}
+    a:hover {color:#FED057}
+
+#container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    height: 40px;
+    background-color: white;
+}
+
+nav > ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+nav > ul > li {
+    display: flex;
+    position: relative;
+    align-items: center;
+    visibility: hidden;
+}
+
+#main {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+nav > #main > li{
+    font-size: 0.9rem;
+    font-weight: 400;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-left: -20px;
+    margin-top: 10px;
+    float: left;
+}
+
+#sub {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: -35px;
+}
+
+nav > #sub > li{
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: flex;
+    float: left;
+}
+
+#logo{
+    display: flex;
+    visibility: visible;
+    margin-top: -10px;
+}
+
+#hamburger{
+    visibility: visible;
+    margin-top: 10px;
+}
+
+header{
+    width: 100%;
+    height: 640px;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:cover;
+    margin: 0;
+}
+
+#shadow{
+    width: 100%;
+    height: 580px;
+    background-color: rgb(0, 0, 0,0.3);
+    color:white;
+}
+
+#maintext{
+    width: 100%;
+    text-align: center;
+    padding: 60px 0px;
+    color: rgb(221, 221, 221);
+    display: block;
+}
+
+#maintext > h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+#maintext > h2 {
+    font-size: 1.1rem;
+    font-weight: 200;
+    line-height: 25px;
+}
+
+#mainsign {
+    width: 70%;
+    margin-top: -50px;
+    float: right;
+    margin-right: 80px;
+    text-align: center;
+}
+
+#mainsign > h5 {
+    font-size: 0.6rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+#mainsign > input[type="text"],input[type="email"],input[type="password"] {
+    margin-top: 15px;
+    width: 340px;
+    height: 30px;
+    border: 1px solid rgb(128, 128, 128,0.3);
+    border-radius: 3px;
+    cursor:pointer;
+    padding: 0px 10px;
+}
+
+#mainsign > input[type="submit"]{
+    margin-top: 10px;
+    width: 360px;
+    height: 45px;
+    font-size: 1.1rem;
+    text-align: center;
+    border: 1px solid rgb(128, 128, 128,0.3);
+    border-radius: 3px;
+    background-color: rgb(144, 201, 60);
+    color:white;
+    cursor:pointer;
+    padding: 0px 10px;
+}
+
+#intro{
+    width:100%;
+    background-color: rgb(128, 128, 128, 0.1);
+}
+
+.page-title{
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.page-title > h1 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.page-title > h2 {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.youtube{
+    margin: 0 auto;
+    margin-left: 15px;
+}
+
+.iconbar{
+    width: 90%;
+    padding: 30px;
+    display: block;
+    text-align: center;
+}
+
+.iconbar > img {
+    width: 250px;
+    margin-top: 50px;
+}
+
+.iconbar > h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.iconbar > h4 {
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+#map{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.page-title2 {
+    text-align: left;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.page-title2 > h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.page-title2 > h2 {
+    font-size: 1.2rem;
+    font-weight: 50;
+    line-height: 30px;
+}
+
+.map{
+    background-color: rgb(128, 128, 128,0.1);
+}
+
+.map > iframe {
+    width:100%; 
+    height:450px;
+    border:0; 
+    box-shadow: 5px 5px 20px grey;
+}
+
+#regbox{
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 180px;
+    height: 45px;
+    font-size: 1.1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(144, 201, 60);
+    color:white;
+    cursor:pointer;
+    padding: 10px 10px;
+}
+
+
+footer{
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(128, 128, 128, 0.05);
+}
+
+footer > ul > li{
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: 100;
+    align-items: center;
+    align-content: space-between;
+}
+
+footer > h4 {
+    font-size: 16px;
+    font-weight: 100;
+    float: left;
+    margin-left: 50px;
+}
+
+footer > #fsub {
+    float: right;
+    margin-right: 60px;
+}
+
+
+
+ /* PC - 1024px 이상 */
+ @media screen and (min-width: 1024px){
+    #container{
+        width: 1500px;
+        margin: 0 auto;
+    }
+
+    nav{
+        height: 60px;
+    }
+
+    #sub{
+        visibility: visible;
+    }
+
+    #hamburger{
+        visibility: hidden;
+    }
+
+    #logo {
+        position: relative;
+        margin-left: 300px;
+    }
+
+    nav > ul > li {
+        visibility: visible;
+    }
+    
+    #main {
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+    
+    nav > #main > li{
+        font-size: 0.9rem;
+        font-weight: 400;
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin-left: 15px;
+        margin-top: 10px;
+        float: left;
+    }
+    
+    #sub {
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin-left: 720px;
+        margin-top: -30px;
+    }
+    
+    nav > #sub > li{
+        font-size: 0.8rem;
+        font-weight: 400;
+        display: flex;
+        margin-left: 10px;
+        float: left;
+    }
+    
+    #searchbox{
+        width:140px;
+        height: 30px;
+        border: 1px solid rgb(128, 128, 128,0.3);
+        border-radius: 3px;
+        cursor:pointer;
+        padding: 0px 10px;
+    }
+    
+    #signinbox{
+        width:65px;
+        height: 30px;
+        color:black;
+        font-weight: bold;
+        border: 1px solid rgb(128, 128, 128,0.3);
+        border-radius: 3px;
+        cursor:pointer;
+    }
+    
+    #signupbox{
+        width:65px;
+        height: 30px;
+        background-color: rgb(132, 202, 26);
+        color:white;
+        font-weight: bold;
+        border: 1px solid rgb(128, 128, 128,0.3);
+        border-radius: 3px;
+        cursor:pointer;
+    }
+    
+    header{
+        width: 100%;
+        height: 650px;
+        background-image: url(../images/bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+    }
+    
+    #shadow{
+        width: 100%;
+        height: 590px;
+        background-color: rgb(0, 0, 0,0.3);
+        color:white;
+    }
+    
+    #maintext{
+        text-align: left;
+        width: 310px;
+        margin-left: 380px;
+        margin-top: 90px;
+        display: inline-block;
+    }
+    
+    #maintext > h1 {
+        font-size: 2.5rem;
+        font-weight: 200;
+        line-height: 50px;
+    }
+    
+    #maintext > h2 {
+        font-size: 1.1rem;
+        font-weight: 200;
+        line-height: 25px;
+    }
+    
+    #maintext > h3 {
+        font-size: 0.5rem;
+        line-height: 1px;
+    }
+    
+    #mainsign {
+        width: 280px;
+        margin-top: 160px;
+        float: right;
+        margin-right: 430px;
+    }
+    
+    #mainsign > h5 {
+        font-size: 0.3rem;
+        font-weight: 100;
+        text-align: center;
+    }
+    
+    #mainsign > input[type="text"],input[type="email"],input[type="password"] {
+        margin-top: 15px;
+        width: 270px;
+        height: 30px;
+        border: 1px solid rgb(128, 128, 128,0.3);
+        border-radius: 3px;
+        cursor:pointer;
+        padding: 0px 10px;
+    }
+    
+    #mainsign > input[type="submit"]{
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 280px;
+        height: 45px;
+        font-size: 1.1rem;
+        text-align: center;
+        border: 1px solid rgb(128, 128, 128,0.3);
+        border-radius: 3px;
+        background-color: rgb(144, 201, 60);
+        color:white;
+        cursor:pointer;
+        padding: 0px 10px;
+    }
+    
+    #intro{
+        width:100%;
+        padding: 15px 0;
+        background-color: rgb(128, 128, 128, 0.1);
+    }
+    
+    .page-title{
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .page-title > h1 {
+        font-size: 2rem;
+        font-weight: 100;
+    }
+    
+    .page-title > h2 {
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+    
+    .youtube{
+        margin-left: 34%;
+    }
+    
+    .iconbar{
+        border-collapse: collapse;
+        width: 60%;
+        height: 400px;
+        margin: 0 auto;
+        column-count: 4; 
+        column-gap: 10px;
+        column-rule: 3px solid rgb(128, 128, 128, 0.05);
+    }
+
+    .iconbar > h3{
+        font-size: 1rem;
+    }
+
+    .iconbar > img {
+        width: 150px;
+    }
+    
+    #map{
+        width: 45%;
+        height: 600px;
+        margin: 0 auto;
+        padding: 30px 50px;
+    }
+    
+    .map{
+        padding: 20px 0;
+    }
+    
+    .page-title2 {
+        text-align: left;
+        margin: 0 auto;
+    }
+    
+    .page-title2 > h1 {
+        font-size: 2rem;
+        font-weight: 100;
+        line-height: 20px;
+    }
+    
+    .page-title2 > h2 {
+        font-size: 1.2rem;
+        font-weight: 100;
+        line-height: 20px;
+    }
+    
+    #reg{
+        width: 70%;
+        height: 100px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        text-align: left;
+        font-weight: lighter;
+    }
+    
+    #regbox{
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 200px;
+        height: 45px;
+        font-size: 1.1rem;
+        text-align: center;
+        border: 1px solid rgb(128, 128, 128,0.1);
+        border-radius: 5px;
+        background-color: rgb(144, 201, 60);
+        color:white;
+        cursor:pointer;
+        padding: 10px 10px;
+    }
+    
+    footer{
+        clear:both;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        margin-top: 200px;
+        background-color: rgb(128, 128, 128, 0.05);
+    }
+}
+

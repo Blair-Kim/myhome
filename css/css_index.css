@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	margin:0;
+	padding:0;
+	color:#000;
+	font-family: twayair;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+}
+
+ /* <-- 헤더--> */ 
+
+header{
+    background-color: rgba(255, 255, 255);
+    top: 0;
+    z-index:999;
+    position: fixed;
+    font-family: twayair;
+    width:100%;
+    height:10%;
+    display: flex;
+	align-items: center;
+    justify-content:flex-start;
+}
+
+header > a {
+    width: 30%;
+    margin-left: 4%;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+header > a > img{
+    width: 3.5rem;
+}
+
+header > a > h2 {
+	margin-left: 5%;
+}
+
+header > nav{
+    position: fixed; right: 7%;
+    /* margin-right: 3%; */
+	width:50%;
+	height:10%;
+}
+
+header > nav > ul {
+    width:100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+header > nav > ul > li {
+	font-size:1.5rem;
+	height: 100%;
+	display: flex;
+    float: none;
+	align-items: center;
+    position: relative;
+}
+
+nav > ul > li > #sub-contents {
+    display: block;
+    position: absolute; left:0; top:80px;
+    line-height: 3rem;
+    opacity: 0;
+}
+
+#mm2:hover > #sub-contents{
+    opacity: 1;
+}
+
+ /* <-- 사이드메뉴바--> */
+
+#menu{
+    z-index: 300;
+    margin-top: 80px;
+    width: 300px;
+    height: 700px;
+    left: 60px;
+    position: relative;
+    float: left;
+    background-color: #FED057;
+}
+
+#menu > .menu-inner > ul {
+    padding: 50px;
+    list-style: none;
+    width: 80%;
+    margin-left: 1%;
+    position: absolute;
+    top: 10px;
+  }
+
+  #menu > .menu-inner >  ul > li {
+    color: #fff;
+    font-family: sans-serif;
+    padding: 30px 0;
+  }
+
+  .menu-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .hamburger {
+    left: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;  
+  }
+
+  .hamburger .line {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+  }
+
+  .hamburger .line:nth-child(2) {
+    top: 50%;
+    margin-top: -2px;
+  }
+
+  .hamburger .line:nth-child(3) {
+    bottom: 0;
+  }
+
+ /* <-- 메인--> */
+
+main{
+    z-index: 500;
+    width: 55%;
+    height: 350px;
+    /* margin-top: 5%; left:60px; 원상태 되면 적용 */
+    margin-top: 5%; left:360px;
+    clear:both;
+    display:flex;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10% 10% 10% 10%;
+    background-color: aquamarine;
+    padding: 10%;
+    text-align: center;
+}
+
+#ex {
+    position: relative;
+    top:10px;
+    width: 800px;
+    height: 400px;
+    margin:0 auto;
+    border-radius: 30px;
+    border:5px solid black;
+    padding: 30px;
+}
+.box{
+    font-size: 20px;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 50px;
+    background-color: gold;
+    border:5px solid black;
+    border-radius: 30%;
+}
+p{
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+}
+#ex:hover > .box{
+    transform: rotate(720deg);
+    margin-left: 650px;
+}
+#no-delay {
+    transition-duration: 3s;
+}
+#delay {
+    transition-delay: 0.5s;
+    transition-duration: 2s;
+}
+
+ /* <-- 풋터--> */
+
+footer{
+    clear:both;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 189, 189);
+}
+
+footer > h2 {
+    margin-left: 45%;
+}
